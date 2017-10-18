@@ -21,7 +21,7 @@ fluidPage(
       # Show a plot of the generated distribution
       mainPanel(
         tabsetPanel(
-            tabPanel("Theoretical density", plotOutput("density"), helpText("This shows the theoretical density...")),
+            tabPanel("Theoretical density", plotOutput("density")),
             tabPanel("Estimated mean's density", plotOutput("mean")),
             tabPanel("Estimated coverage of Student's CI", plotOutput("coverage"))
             )
