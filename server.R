@@ -117,7 +117,7 @@ function(input, output) {
                 lines(x0,d.x0,col="blue")
             }
             abline(v=input$mu,col="blue",lty=3,lwd=2)
-            axis(3,at=input$mu,labels=expression(mu),tick=FALSE,col.axis="blue")
+            axis(3,at=input$mu,labels=expression(mu),tick=FALSE,col.axis="blue",cex.axis=1.25,padj=1.5)
             
             # simulated samples:
             R = length(data$y_r)
@@ -165,8 +165,8 @@ function(input, output) {
             abline(h=0,col="black")
             lines(x1,d.x1,col="blue")
             abline(v=input$mu,col="blue",lty=3,lwd=2)
-            axis(3,at=input$mu,labels=expression(mu),tick=FALSE,col.axis="blue",padj=1)
-            legend("topright",legend="Normal approximation",lty=1,col="blue",box.lwd=NA,cex=.75)
+            axis(3,at=input$mu,labels=expression(mu),tick=FALSE,col.axis="blue",cex.axis=1.25,padj=1.5)
+            legend("topright",legend="Normal\napproximation",lty=1,col="blue",box.lwd=NA,cex=1)
             # add mean of samples 1 to 5
             R = length(data$y_r)
             for(r in 1:length(data$y_r)){# r=1
@@ -191,7 +191,7 @@ function(input, output) {
             # limits
             xlim1   = input$mu+c(-1,1)*max(abs(data$ci_r-input$mu))
             x1      = seq(xlim1[1],xlim1[2],length=1000)
-            ylim1   = c(-15,120)
+            ylim1   = c(-25,120)
             
             ## plots
             par(mfrow=c(1,1))
@@ -202,7 +202,7 @@ function(input, output) {
             axis(1,pos=15)
             axis(2,at=c(seq(120,21,-10),21),label=c(1,seq(10,100,10)),las=2,tick=FALSE)
             axis(4,at=70,label="100 first simulated samples",tick=FALSE)        
-            axis(3,at=input$mu,labels=expression(mu),tick=FALSE,col.axis="blue",padj=1)
+            axis(3,at=input$mu,labels=expression(mu),tick=FALSE,col.axis="blue",cex.axis=1.25,padj=1.5)
             # add mean of samples 1 to 5
             R = 100
             for(r in 1:R){# r=1
@@ -211,7 +211,7 @@ function(input, output) {
                     }
             }   
             abline(v=input$mu,col="blue",lty=3,lwd=2)
-            legend("bottom",legend=c("CI contains true mean value","CI does not contain true mean value"),lty=c(1,1),col=c("red","gray"),box.lwd=0.2,bg="white",cex=.75)
+            legend("bottom",legend=c("CI contains true mean value","CI does not contain true mean value "),lty=c(1,1),col=c("red","gray"),box.lwd=0.2,bg="white",cex=1)
             })
         })
 
