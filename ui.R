@@ -25,7 +25,7 @@ fluidPage(
             tabPanel("Estimated mean's density", plotOutput("mean")),
             tabPanel("Estimated coverage of Student's CI", plotOutput("coverage"))
             )
-        )
+        ) 
    )
 )
 
