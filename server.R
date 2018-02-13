@@ -211,7 +211,7 @@ function(input, output) {
                     }
             }   
             abline(v=input$mu,col="blue",lty=3,lwd=2)
-            legend("bottom",legend=c("CI contains true mean value","CI does not contain true mean value "),lty=c(1,1),col=c("red","gray"),box.lwd=0.2,bg="white",cex=1)
+            legend("bottom",legend=c("CI does not contain the true mean value","CI contains the true mean value"),lty=c(1,1),col=c("red","gray"),box.lwd=0.2,bg="white",cex=.75)
             })
         })
 
