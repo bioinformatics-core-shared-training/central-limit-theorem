@@ -14,7 +14,7 @@ fluidPage(
         actionButton("go", "Simulate"),
         p(""),
         p("App developed by DLC / 20170927",style = "color:#FFFFFF;"),
-        img(src="http://www.cruk.cam.ac.uk/sites/all/themes/cambridge_theme/images/interface/main-logo-small.png",
+        img(src="https://www.cruk.cam.ac.uk/wp-content/themes/cambridge-theme/images/interface/main-logo-small.png",
             width = 100)        
         ),
       
