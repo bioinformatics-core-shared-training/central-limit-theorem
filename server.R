@@ -1,3 +1,4 @@
+#server = 
 function(input, output) {
 
     v <- reactiveValues(simul = FALSE)
@@ -42,7 +43,7 @@ function(input, output) {
                     "Number of simulated samples",
                     min = 1000,
                     max = 10000,
-                    value = 10000)
+                    value = 1000)
         })
 
     observeEvent(input$sidebar, {

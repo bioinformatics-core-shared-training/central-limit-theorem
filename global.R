@@ -25,10 +25,11 @@ distribution = data.frame(pos        = 1:7,
     x.high      = c(Inf,Inf,1-1e-2,1,Inf,Inf,Inf),
     row.names   = c("Gaussian","Gamma","Beta","Bernoulli","Weibull","Zero-inflated Poisson","Poisson"),
     mu.name     = c("Theoretical mean value","Theoretical probability of success value")[c(1,1,1,2,1,1,1)],
-    sigma.name  = c("Theoretical variance value","Theoretical shape parameter value","Theoretical probability to belong to the clump-at-zero")[c(1,2,2,NA,2,3,NA)],
+    sigma.name  = c("Theoretical standard deviation value","Theoretical shape parameter value","Theoretical probability to belong to the clump-at-zero")[c(1,2,2,NA,2,3,NA)],
     discrete    = c(FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE),
     stringsAsFactors = FALSE
     )[c(1,2,3,5,4,7,6),]
 
+# shinyApp(ui, server)
 
 
